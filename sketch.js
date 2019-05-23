@@ -209,7 +209,7 @@ function gameOver(){
 		objects[j].remove();
 	}
 	drawObjects();
-	if(level=1){
+	if(level==1){
 		createEnemies();
 	}else{
 		level=1;
