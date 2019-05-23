@@ -196,7 +196,7 @@ function gameOver(){
 	es.addAnimation('normal','assets/gameOver.png');
 	scenes.add(es);
 
-	level = 0;
+	level = 1;
 	score = 0;
 	nballs = 0;
 	player.position.x=75;
