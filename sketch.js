@@ -181,12 +181,21 @@ function drawObjects(){
 }
 
 function createEnemies(){
+	if(level>1){
+		level-=1;
+		var l = 1;
+	}else{
+		var l =0;
+	}
 	for (var ii = 0; ii < level; ii++){
 		var enemy = createSprite(500, 300);
   	enemy.addAnimation('normal', 'assets/enemy0.png', 'assets/enemy3.png');
 		enemy.depth = 10;
 		enemy.setSpeed(3,90);
 		enemies.add(enemy);
+	}
+	if(l==1){
+		level+=1;
 	}
 }
 
