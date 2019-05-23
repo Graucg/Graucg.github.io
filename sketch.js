@@ -215,7 +215,7 @@ function gameOver(){
 	}else{
 		var l =0;
 	}
-	createEnemies();
+	//createEnemies();
 	if(l==1){
 		level+=1;
 	}
