@@ -196,7 +196,7 @@ function gameOver(){
 	es.addAnimation('normal','assets/gameOver.png');
 	scenes.add(es);
 
-	level = 1;
+	
 	score = 0;
 	nballs = 0;
 	player.position.x=75;
@@ -215,7 +215,11 @@ function gameOver(){
 	}else{
 		var l =0;
 	}
-	//createEnemies();
+	if(level=1){
+		createEnemies();
+	}else{
+		level=1;
+	}
 	if(l==1){
 		level+=1;
 	}
